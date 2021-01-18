@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\delimitershortfall-1sp
+\newcommand\abs[1]{\left|#1\right|}
+
+\makeatletter
+\renewcommand\subparagraph{\@startsection{subparagraph}{5}{\z@}%
+                                     {-1.5ex\@plus -1ex \@minus -.2ex}%
+                                     {0.5001pt \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+\makeatother
+
+\pagestyle{myheadings}
+
+\title{CS698G Mobile Robotics\\Swarm EKF Localization for a Multiple Robot System with Range-Only Measurements}
+
+\author{Satyam Dwivedi, 13629\\Lokendra Choudhari, 14356}
+\markright{Project Proposal}
+
+\begin{document}
+\maketitle
+
+\subsection*{Objective}
+In this project we will implement the 'Swam EKF localisation' algorithm proposed in [1] on  a swarm robot system having atleast two robots, each with the capability of range measurement and message passing to its neighbouring robot. Using this algorithm we will try to localize each of the robots, given its environment.
+\subsection*{Project Description}
+Usually a localization problem involves prediction of robot state using its motion model and then correcting the prediction using the observations that the robot collects from its environment. In this problem, along with the sensor data we will also use the observations of neighbouring robots also to localize each of the robot in the system. One of the problem in this scheme is to distribute the computations among multiple robots, which is succesfully implemented in [1].\\
+\indent The project deals with localization of the system in its environment, which is one of the major part of the course. The algorithm we are going to implement is a hybrid of EKF and Belief Propagation algorithm both of which have already been taught to us in class. Thus  it is clear that the project is well related with the course.
+\subsection*{Tentative Approach}
+We will first try to understand exactly how the proposed algorithm works and try to implement it on matlab. We do not have the dataset yet so if we are unable to find a proper dataset online, we will try to create an artificial dataset for ourself or we could also generate data using robots that are available in lab. Finally, if time permits, we will try to implement the algorithm on the robots available in lab.
+
+\subsection*{Reference}
+[1] Fukui, Shigekazu, and Keitaro Naruse. "Swarm EKF localization for a multiple robot system with range-only measurements." \textit{Soft Computing in Advanced Robotics}. Springer International Publishing, 2014. 91-103.
+
+\end{document}
