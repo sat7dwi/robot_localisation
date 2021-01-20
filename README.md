@@ -1,5 +1,5 @@
 # Harmonic Search Based Algorithms For Mobile Robot Localization
-EE698 mobile robotics course project - Implementedevolutionary algorithms(Harmony Search and HIDE)forautonomousrobotlocalizationanddemonstrated the effectiveness of the algorithms over existing ICP algorithm in speed and accuracy. Also implemented SLAM using above algorithms and presented a real-time demo of the project.
+EE698 mobile robotics course project - Implemented evolutionary algorithms (Harmony Search and HIDE) for autonomous robot localization and demonstrated the effectiveness of the algorithms over existing ICP algorithm in speed and accuracy. Also implemented SLAM using above algorithms and presented a real-time demo of the project.
 
 For a mobile Robot to be autonomous, it first needs to have confidence of its own position with respect to environment. 
 In this project we implement two novel algorithms that could be used to efficiently localize an autonomous bot
